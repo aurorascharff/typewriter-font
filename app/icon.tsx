@@ -21,7 +21,7 @@ export default function Icon() {
           color: "#fafafa",
         }}
       >
-        𝚃
+        T
       </div>
     ),
     { ...size },

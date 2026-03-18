@@ -29,7 +29,7 @@ export default function OgImage() {
             lineHeight: 1.1,
           }}
         >
-          𝚃𝚢𝚙𝚎𝚠𝚛𝚒𝚝𝚎𝚛 𝙵𝚘𝚗𝚝
+          Typewriter Font
         </div>
         <div
           style={{
