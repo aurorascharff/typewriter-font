@@ -26,7 +26,8 @@ export default function Home() {
           </h1>
           <p className="text-sm text-foreground/70">
             Convert text to monospace Unicode characters that look like a
-            terminal or typewriter. Copy and paste them anywhere.
+            terminal or typewriter. Works on Twitter, Instagram, LinkedIn,
+            and anywhere else that supports text.
           </p>
         </div>
         <TypewriterConverter />
