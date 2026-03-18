@@ -21,8 +21,8 @@ export default function Home() {
       />
       <main className="flex w-full max-w-xl flex-col gap-8">
         <div className="flex flex-col gap-2">
-          <h1 className="text-2xl font-semibold tracking-tight">
-            Typewriter Font
+          <h1 className="text-2xl font-semibold tracking-tight font-mono">
+            𝚃𝚢𝚙𝚎𝚠𝚛𝚒𝚝𝚎𝚛 𝙵𝚘𝚗𝚝
           </h1>
           <p className="text-sm text-foreground/70">
             Convert text to monospace Unicode characters that look like a
