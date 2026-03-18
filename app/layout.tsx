@@ -12,10 +12,42 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const siteUrl = "https://typewriter-font.vercel.app";
+const title = "Typewriter Font – Unicode Monospace Text Generator";
+const description =
+  "Convert text to monospace Unicode characters that look like a terminal or typewriter. Copy and paste them anywhere.";
+
 export const metadata: Metadata = {
-  title: "Typewriter Font – Unicode Monospace Text Generator",
-  description:
-    "Convert your text to Unicode monospace (typewriter) characters. Paste anywhere – social media, notes, messages.",
+  title,
+  description,
+  metadataBase: new URL(siteUrl),
+  alternates: { canonical: "/" },
+  keywords: [
+    "typewriter font",
+    "monospace text",
+    "unicode monospace",
+    "typewriter text generator",
+    "fixed-width text",
+    "copy paste font",
+    "unicode text converter",
+  ],
+  openGraph: {
+    title,
+    description,
+    url: "/",
+    siteName: "Typewriter Font",
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary",
+    title,
+    description,
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({
