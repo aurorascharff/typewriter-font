@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import { Check, Copy } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
@@ -14,13 +14,13 @@ export function TypewriterConverter() {
 
   const converted = toMonospace(input);
 
-  const handleCopy = useCallback(async () => {
+  async function handleCopy() {
     if (!converted) return;
     await navigator.clipboard.writeText(converted);
     setCopied(true);
     if (timeoutRef.current) clearTimeout(timeoutRef.current);
     timeoutRef.current = setTimeout(() => setCopied(false), 2000);
-  }, [converted]);
+  }
 
   return (
     <div className="flex w-full flex-col gap-6">
